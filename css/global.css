@@ -1,0 +1,484 @@
+@charset "utf-8";
+/*reset*/
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    height: 100%;
+    background: #F6F6F6;
+    font-family: "Helvetica Neue", 'Helvetica', 'sans-serif', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 14px;
+    color: #494848;
+    width: 100%;
+    /*max-width: 640px;
+    min-width: 320px;*/
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+select,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="number"] {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+section,
+header,
+footer,
+article,
+nav,
+aside,
+div,
+input,
+button,
+select,
+textarea,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+form,
+i,
+b,
+span,
+table,
+td,
+th,
+ol,
+ul,
+li,
+a,
+input,
+button,
+select {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    color: #666;
+    /*font-family:'微软雅黑','黑体',Arial,Helvetica,sans-serif;*/
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a:hover, a:active, a:visited, a:link, a:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+
+b,
+i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+table {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+input,
+img {
+    vertical-align: middle;
+}
+
+input {
+    /*border: 1px solid #e2e8ef;*/
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: #666;
+}
+
+/*public*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+}
+
+.flex-sbt {
+    justify-content: space-between;
+}
+
+.bgcf {
+    background-color: #fff;
+}
+
+/*字体*/
+@font-face {
+    font-family: "otf";
+    src: url("../images/otf.otf");
+}
+
+.otf {
+    font-family: "otf";
+}
+
+.btn {
+    background: #FFD24F;
+    border: 1px solid #BB8C00;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder {
+    color: #939393;
+}
+
+/*底部*/
+#footer {
+    height: 2.5rem;
+}
+
+.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    z-index: 10;
+}
+
+footer,
+iframe {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 0.05rem solid #F1F1F1;
+}
+
+footer .flext {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    width: 0%;
+    text-align: center;
+    background: #FFF;
+    height: 2.5rem;
+    overflow: hidden;
+    display: block;
+}
+
+footer .flext dt {
+    padding: 0.3rem 0 0.1rem;
+}
+
+footer .flext dt img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+footer .flext dd {
+    font-size: 0.5rem;
+    color: #BABABA;
+}
+
+footer .active dd {
+    color: #331D11;
+}
+
+/*图片loading旋转*/
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*悬浮导航*/
+#portal {
+    position: fixed;
+    z-index: 99;
+    right: 1rem;
+    bottom: 3.8rem;
+}
+
+#portal > a {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#portal > a:first-child {
+    margin-bottom: 0.5rem;
+}
+
+#portal > a > img {
+    width: 100%;
+}
+
+.radioArry {
+    background-color: #fff;
+    padding: 0.6rem 0;
+}
+
+.radioArry > div {
+    margin: 0px 0.75rem;
+    background: url(../images/check_radio.png) left center no-repeat;
+    background-size: 0.9rem;
+    padding-left: 1.2rem;
+    line-height: 1.5rem;
+    color: #150D00;
+    font-size: 0.75rem;
+}
+
+.radioArry > div.on {
+    background: url(../images/checked_radio.png) left center no-repeat;
+    background-size: 0.9rem;
+}
+
+/*公共的弹窗*/
+.tips-bgc {
+    position: fixed;
+    z-index: 97;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.publicTip {
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    text-align: center;
+    position: fixed;
+    z-index: 98;
+    width: 15.6rem;
+    left: 50%;
+    margin-left: -7.8rem;
+    top: 50%;
+    padding: 2rem 1rem;
+    height: auto;
+    background-color: #fff;
+}
+
+.publicTip .publicTip-cont {
+    font-size: 0.75rem;
+    color: #211A0D;
+    line-height: 1.25rem;
+}
+
+.publicTip .publicTip-cont span {
+    color: #EC0D1A;
+}
+
+.publicTip .publicTip-cont .yellowColor {
+    color: #FF8038;
+}
+
+.publicTip .publicTip-close {
+    margin-top: 2rem;
+}
+
+.publicTip .publicTip-close a {
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    color: #331D11;
+    font-size: 0.8rem;
+    text-align: center;
+    display: inline-block;
+    width: 6.1rem;
+    height: 2rem;
+    line-height: 2rem;
+    background: #FFD24F;
+    border: 0.05rem solid #BB8C00;
+}
+
+.publicTip .publicTip-close a.publicTip-n {
+    margin-right: 1.2rem;
+    background: #FFF7E2;
+    border: 0.05rem solid #F7B701;
+}
+
+.publicTip .publicTip-close a.publicTip-s {
+    width: 10rem;
+}
+
+/*加载更多*/
+.moreLoad {
+    padding: .5rem 0;
+    background-color: #fff;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: .5rem;
+}
+
+.show {
+    display: block !important;
+}
+
+/*转圈遮罩层*/
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 96;
+}
+
+#loading > div {
+    position: absolute;
+    color: #666;
+    top: 0;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+#loading > div img {
+    width: 100px;
+    margin-left: 5px;
+
+}
+
+/*顶部菜单*/
+.top-bar {
+    position: fixed;
+    width: 100%;
+    height: 2.5rem;
+    background: #ffffff;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.top-bar .top-bar-back {
+    display: block;
+    float: left;
+    width: 4.4rem;
+    height: 100%;
+    background: url("../images/back.png") no-repeat;
+    background-size: 0.6rem 1.05rem;
+    background-position: 1.05rem 50%;
+    color: #333333;
+}
+
+.top-bar .top-bar-url {
+    display: block;
+    float: right;
+    width: 4.4rem;
+    height: 100%;
+    font-size: 0.6rem;
+    color: #333333;
+}
+
+.top-bar-after {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    content: '';
+}

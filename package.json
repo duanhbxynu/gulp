@@ -1,0 +1,32 @@
+{
+  "name": "gulpTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulp",
+  "bin": {
+    "gulpTest": "pccb_bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.prosysoft.com:81/pccb/static-h5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "postcss-pxtorem": "^4.0.1",
+    "webpack": "^2.6.1"
+  }
+}

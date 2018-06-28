@@ -1,0 +1,362 @@
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1; }
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  display: none; }
+
+.slick-slide img {
+  display: block;
+  width: 100%; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+/* Icons */
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: none;
+  height: 1rem;
+  width: 1rem;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+
+.slick-prev:focus,
+.slick-next:focus {
+  outline: none; }
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25; }
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 1.25rem;
+  line-height: 1;
+  color: white;
+  opacity: 0.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Dots */
+.slick-banner {
+  margin: 0; }
+
+.slick-slider {
+  text-align: center; }
+
+.slick-dots {
+  position: absolute;
+  bottom: 0.6rem;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 0.3rem;
+  width: 0.3rem;
+  margin: 0 0.25rem;
+  padding: 0;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.5; }
+
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 0.3rem;
+  width: 0.3rem;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 0.25rem;
+  cursor: pointer;
+  outline: none; }
+
+.slick-dots li.slick-active {
+  background: #fff;
+  opacity: 1; }
+
+.slick-dots li button:focus {
+  outline: none; }
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75; }
+
+.index_icon {
+  padding: 1.3rem 0 0.75rem;
+  background-color: #fff; }
+  .index_icon > ul {
+    justify-content: space-between;
+    width: 100%; }
+    .index_icon > ul > li {
+      width: 25%;
+      text-align: center;
+      float: left; }
+      .index_icon > ul > li p {
+        color: #666;
+        font-size: 0.6rem;
+        margin: 0.55rem 0 0 0; }
+      .index_icon > ul > li div {
+        color: #939393;
+        font-size: 0.6rem; }
+      .index_icon > ul > li img {
+        width: 1.5rem;
+        height: 1.3rem; }
+
+.disclosure {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #FFFFFF; }
+  .disclosure p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1rem;
+    padding-right: 0.45rem;
+    border-right: 0.05rem solid #999; }
+  .disclosure ul {
+    padding-left: 0.45rem;
+    overflow: hidden;
+    display: inline-block;
+    height: 1rem; }
+    .disclosure ul li {
+      height: 1rem;
+      line-height: 1rem; }
+      .disclosure ul li span:nth-of-type(1) {
+        font-size: 0.7rem;
+        color: #999999; }
+      .disclosure ul li span:nth-of-type(2) {
+        font-size: 0.7rem;
+        color: #FF7A00; }
+
+.index-newUser {
+  background: #FFFFFF;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  text-align: center; }
+  .index-newUser .title {
+    margin-bottom: 0.5rem; }
+    .index-newUser .title span:nth-child(2) {
+      font-size: 0.7rem;
+      color: #333333;
+      position: relative;
+      top: 0.1rem; }
+    .index-newUser .title .xin {
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      font-size: 0.5rem;
+      line-height: 0.85rem;
+      color: #FFFFFF;
+      background: #FF5723;
+      border-radius: 0.1rem;
+      margin-right: 0.2rem; }
+  .index-newUser .rate span {
+    font-size: 2rem;
+    color: #FF7A00;
+    line-height: 2.8rem; }
+  .index-newUser .rateWord {
+    font-size: 0.6rem;
+    color: #999999;
+    line-height: 0.85rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.95rem; }
+  .index-newUser .time {
+    width: 16.75rem;
+    text-align: center;
+    margin-bottom: 0.8rem; }
+    .index-newUser .time p {
+      display: inline-block;
+      font-size: 0.7rem;
+      color: #999999; }
+      .index-newUser .time p span:nth-child(1) {
+        display: inline-block;
+        color: #333333;
+        margin-left: 0.5rem; }
+    .index-newUser .time p:nth-child(1) {
+      padding-right: 35px;
+      border-right: 0.05rem solid #e6e6e6; }
+    .index-newUser .time p:nth-child(2) {
+      padding-left: 35px; }
+  .index-newUser button {
+    width: 13.5rem;
+    height: 2.2rem;
+    background-image: linear-gradient(141deg, #FFBE00 0%, #FF7A00 100%);
+    border-radius: 1.9rem;
+    border: none;
+    font-size: 0.9rem;
+    color: #FFFFFF; }
+
+.recommend {
+  margin-bottom: 0.5rem; }
+  .recommend > p {
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-size: 0.7rem;
+    color: #666666; }
+  .recommend .recommend-lists {
+    background: #FFFFFF;
+    padding: 1rem; }
+    .recommend .recommend-lists .title {
+      margin-bottom: 0.4rem; }
+      .recommend .recommend-lists .title .zhi {
+        display: inline-block;
+        width: 0.8rem;
+        height: 0.8rem;
+        background: #2589FE;
+        border-radius: 0.1rem;
+        font-size: 0.5rem;
+        color: #FFFFFF;
+        line-height: 0.9rem;
+        text-align: center;
+        margin-right: 0.15rem; }
+      .recommend .recommend-lists .title span:nth-child(2) {
+        font-size: 0.6rem;
+        color: #333333;
+        line-height: 0.6rem;
+        position: relative;
+        top: 0.075rem; }
+    .recommend .recommend-lists .biao div p:nth-of-type(2) {
+      font-size: 0.6rem;
+      color: #999999; }
+    .recommend .recommend-lists .biao div:nth-of-type(1) {
+      margin-right: 2.75rem; }
+      .recommend .recommend-lists .biao div:nth-of-type(1) span {
+        font-size: 1.4rem;
+        color: #FF7A00;
+        line-height: 2rem; }
+    .recommend .recommend-lists .biao div:nth-of-type(2) p:nth-of-type(1) {
+      font-size: 0.8rem;
+      color: #333333;
+      line-height: 2rem; }
+    .recommend .recommend-lists .biao div:nth-of-type(3) button {
+      display: inline-block;
+      border: none;
+      background: #FFBE00;
+      border-radius: 0.15rem;
+      width: 5.25rem;
+      height: 1.6rem;
+      font-size: 0.7rem;
+      color: #FFFFFF;
+      margin-top: 1.1rem;
+      box-sizing: border-box; }
+
+.totals {
+  background: url(../images/index/totals.png) no-repeat center;
+  background-size: 100% 100%;
+  padding: 1.6rem 1rem; }
+  .totals fieldset {
+    border: 0.05rem solid #4C5458;
+    border-radius: 0.2rem; }
+    .totals fieldset legend {
+      text-align: center;
+      padding: 0 0.5rem;
+      font-size: 0.7rem;
+      color: #999999; }
+    .totals fieldset p {
+      text-align: center;
+      font-size: 0.7rem;
+      padding: 1rem 0; }
+      .totals fieldset p span {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #FFBE00;
+        padding: 0 0.3rem; }
+  .totals fieldset:nth-of-type(1) {
+    margin-bottom: 0.8rem; }
+
+.knowUs {
+  padding: 1rem 0 0.8rem;
+  text-align: center;
+  width: 7rem;
+  margin: 0 auto; }
+  .knowUs p {
+    font-size: 0.75rem;
+    color: #666666;
+    padding: 0.3rem 0;
+    background: #EEEEEE;
+    border-radius: 2.7rem; }
+    .knowUs p span {
+      display: inline-block;
+      margin: 0 0.5rem;
+      color: #ccc; }

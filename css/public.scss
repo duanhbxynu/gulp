@@ -1,0 +1,17 @@
+@mixin borderRadius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin transition($t:.3s){
+      transition: all $t ease-in-out 0s;
+      -webkit-transition: all $t ease-in-out 0s;
+      -moz-transition: all $t ease-in-out 0s;
+      -ms-transition: all $t ease-in-out 0s;
+      -o-transition: all $t ease-in-out 0s;
+}
+
+@function rems($px){ 
+    @return $px / 20px * 1rem;
+}
